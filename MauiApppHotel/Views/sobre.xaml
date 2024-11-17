@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApppHotel.Views.sobre"
+             Title="Sobre"
+             BackgroundColor="{StaticResource Gray100}">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="20">
+        <Label Text="Sobre o Aplicativo"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               Margin="0,20,0,20"/>
+
+        <Frame Padding="20"
+               BackgroundColor="{StaticResource White}"
+               CornerRadius="15">
+            <VerticalStackLayout>
+                <Label Text="Desenvolvedor: Leonardo de Araujo Hayashi"
+                       FontSize="20"
+                       Margin="0,10"/>
+                <Label Text="Ano de Desenvolvimento: 2024"
+                       FontSize="20"
+                       Margin="0,10"/>
+                <Label Text="Este aplicativo é um exemplo prático para a gestão de reservas de hospedagem."
+                       FontSize="18"
+                       Margin="0,20,0,0"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                FontSize="18"
+                BackgroundColor="{StaticResource Azulsonic}"
+                TextColor="White"
+                Clicked="OnBackClicked"
+                Margin="0,20,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>
